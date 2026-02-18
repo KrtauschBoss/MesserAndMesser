@@ -1,0 +1,37 @@
+/* Sidebar Card */
+/* Sidebar Practice Area Styling (Static Version) */
+.sidebar-practice-list {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-practice-list > li {
+    font-weight: 700;
+    color: var(--fsu-garnet);
+    margin-top: 25px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1.2px;
+    border-bottom: 2px solid var(--fsu-gold); /* Adds a professional accent line */
+    padding-bottom: 5px;
+    display: block;
+}
+
+.sidebar-practice-list ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+.sidebar-practice-list ul li {
+    font-weight: 400;
+    font-size: 0.95rem;
+    padding: 6px 0;
+    color: var(--fsu-black);
+    border-bottom: 1px solid #f1f5f9; /* Subtle separator for readability */
+}
+
+/* Ensure the first item doesn't have too much top margin */
+.sidebar-practice-list > li:first-child {
+    margin-top: 0;
+}

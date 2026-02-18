@@ -1,0 +1,59 @@
+/* CTA Section Styling */
+.action-box {
+    margin-top: 40px;
+    padding: 35px;
+    background-color: rgba(120, 0, 0, 0.04); /* Very subtle Garnet tint */
+    border-left: 6px solid #C4A006; /* FSU Gold */
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.action-box h3 {
+    margin: 0;
+    color: #780000; /* FSU Garnet */
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.action-box p {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+.action-box .cta-button {
+    align-self: flex-start; /* Keeps button from stretching full width */
+    margin-top: 10px;
+    background-color: #780000;
+    color: #fff !important;
+    padding: 14px 28px;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 2px;
+    transition: background 0.3s ease;
+}
+
+.action-box .cta-button:hover {
+    background-color: #5a0000;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .action-box {
+        padding: 25px;
+        text-align: center;
+        border-left: none;
+        border-top: 6px solid #C4A006;
+    }
+    .action-box .cta-button {
+        align-self: center;
+        width: 100%;
+    }
+}

@@ -1,0 +1,153 @@
+:root {
+    /* Official FSU Palette */
+    --fsu-garnet: #782F40;
+    --fsu-gold: #CEB888;
+    --fsu-gold-dark: #B09A6A; /* For hover states */
+    --fsu-black: #2C2A29;
+    --white: #ffffff;
+    --bg-light: #f9f6f0; /* Slightly warm off-white */
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Inter', sans-serif; color: var(--fsu-black); line-height: 1.6; padding-top: 0; background-color: var(--white); }
+
+/* --- COMPACT HERO --- */
+.hero {
+    /* Updated to a Garnet gradient */
+    background: linear-gradient(135deg, #4d1e29 0%, var(--fsu-garnet) 100%);
+    color: var(--white);
+    padding: 40px 5%;
+    border-bottom: 5px solid var(--fsu-gold);
+}
+
+.hero-content { 
+    max-width: 1100px; 
+    margin: 0 auto; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 20px; 
+}
+
+.hero h1 { color: var(--white); font-family: 'Playfair Display', serif; font-size: 1.8rem; line-height: 1.2; }
+.hero p { opacity: 0.95; font-size: 0.95rem; max-width: 500px; }
+
+.cta-primary {
+    background: var(--fsu-gold);
+    color: var(--fsu-garnet); /* High contrast Garnet on Gold */
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    display: inline-block;
+    text-align: center;
+    transition: background 0.3s ease;
+}
+
+.cta-primary:hover {
+    background: var(--white);
+    color: var(--fsu-garnet);
+}
+
+@media (min-width: 768px) {
+    .hero { padding: 60px 8%; }
+    .hero-content { flex-direction: row; justify-content: space-between; align-items: center; }
+    .hero h1 { font-size: 2.5rem; }
+}
+
+/* --- CONTENT SECTION --- */
+.main-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+}
+
+@media (min-width: 992px) {
+    .main-container { grid-template-columns: 2fr 1fr; }
+}
+
+.content-block h2 { 
+    font-size: 1.8rem; 
+    margin-bottom: 1.5rem; 
+    color: var(--fsu-garnet); 
+    border-bottom: 2px solid var(--fsu-gold); 
+    padding-bottom: 10px; 
+}
+
+.content-block p { margin-bottom: 1.5rem; font-size: 1.05rem; }
+
+.content-body ul {
+    margin-left: 0;
+    padding-left: 35px; 
+    list-style-position: outside; 
+    list-style-type: square;
+}
+
+.content-body li {
+    margin-bottom: 12px;
+    padding-left: 5px;
+}
+
+.content-body ul li::marker {
+    color: var(--fsu-garnet); /* Garnet bullets for a sharp look */
+}
+
+/* --- BUTTONS --- */
+.btn {
+    display: inline-block;
+    background-color: var(--fsu-garnet);
+    color: #ffffff !important;
+    padding: 16px 32px;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 2px solid var(--fsu-garnet);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(120, 47, 64, 0.2);
+}
+
+.btn:hover {
+    background-color: var(--fsu-gold);
+    color: var(--fsu-garnet) !important;
+    border-color: var(--fsu-gold);
+    box-shadow: 0 6px 12px rgba(206, 184, 136, 0.4);
+    transform: translateY(-2px);
+}
+
+.btn::after {
+    content: ' →';
+    margin-left: 10px;
+    transition: margin-left 0.3s ease;
+}
+
+.btn:hover::after {
+    margin-left: 15px;
+}
+
+/* --- SIDEBAR/CTA BOX --- */
+.cta-box {
+    background-color: var(--bg-light);
+    padding: 40px;
+    border-left: 5px solid var(--fsu-gold);
+    border-right: 1px solid #e0e0e0; /* Subtle definition */
+    margin-top: 50px;
+    text-align: center;
+}
+
+.cta-box h3 {
+    margin-top: 0;
+    font-family: 'Playfair Display', serif;
+    color: var(--fsu-garnet);
+}
+
+.cta-box p {
+    margin-bottom: 25px;
+    color: var(--fsu-black);
+}

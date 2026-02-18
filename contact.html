@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Messer & Messer Law Offices</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/cta.css">
+    <style>
+        /* Specific styles for the Contact Form */
+        .contact-form {
+            background: #f9f9f9;
+            padding: 30px;
+            border-radius: 8px;
+            border-top: 4px solid var(--fsu-garnet);
+            margin-top: 20px;
+        }
+        .form-group { margin-bottom: 15px; }
+        .form-group label { display: block; font-weight: 700; margin-bottom: 5px; color: var(--navy-dark); }
+        .form-group input, .form-group textarea, .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: 'Inter', sans-serif;
+        }
+        .map-container {
+            margin-top: 30px;
+            border: 1px solid #ddd;
+            line-height: 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="top-bar">
+    <a href="tel:7728793000">CLICK TO CALL: (772) 879-3000</a>
+</div>
+
+<header>
+    <a href="index.html" class="logo-text">MESSER <span>&</span> MESSER</a>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown">
+                <a href="#">Practices</a>
+                <ul class="submenu">
+                    <li><a href="personal-injury.html">Personal Injury</a></li>
+                    <li><a href="estate-planning.html">Estate Planning & Probate</a></li>
+                    <li><a href="family-law.html">Family Law</a></li>
+                </ul>
+            </li>
+            <li><a href="verdicts.html">Verdicts</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <div class="hero-text">
+            <h1>Contact Our Offices</h1>
+            <p>Get the personalized legal representation you deserve. We are here to help.</p>
+        </div>
+        <div class="hero-cta">
+            <a href="tel:7728793000" class="cta-primary">Call (772) 879-3000</a>
+        </div>
+    </div>
+</section>
+
+<div class="main-container">
+    <main class="content-block">
+        <h2>Get In Touch</h2>
+        <p>You don't have to travel far to get personalized legal services. Messer & Messer Law Offices is conveniently located in Fort Pierce, FL to better serve area residents.</p>
+        
+        <div class="contact-form">
+            <h3 style="color: var(--fsu-garnet); margin-bottom: 20px;">Email Us Now</h3>
+            <form id="form" action="https://api.web3forms.com/submit" method="POST">
+
+                <input type="hidden" name="access_key" value="a17ee104-6251-4dc1-8422-c1e7490ccdd5">
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                <div class="form-group">
+                    <label>Name *</label>
+                    <input type="text" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Email Address *</label>
+                    <input type="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea name="message" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="cta-primary">Submit Message</button>
+            </form>
+        </div>
+
+        <div id="success-msg" style="display: none; text-align: center; padding: 50px 20px; background: #fff; border: 2px solid var(--fsu-gold); border-radius: 8px; margin-top: 20px;">
+            <div style="font-size: 50px; color: var(--fsu-gold); margin-bottom: 10px;">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3 style="color: var(--fsu-garnet); font-family: 'Playfair Display', serif; font-size: 1.8rem;">Message Sent!</h3>
+            <p style="font-family: 'Inter', sans-serif; color: #555; line-height: 1.6;">
+                Thank you for contacting Messer & Messer.<br> 
+                A member of our team will review your inquiry and reach out shortly.
+            </p>
+            <button onclick="location.reload()" style="margin-top: 20px; background: transparent; border: 1px solid #ccc; padding: 10px 20px; cursor: pointer; border-radius: 4px;">Send another message</button>
+        </div>
+
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3550.9328479269414!2d-80.3235378!3d27.4246061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88de09930864390b%3A0x6b49e5d6d451275d!2s2112%20S%20US%20Hwy%201%20%23102%2C%20Fort%20Pierce%2C%20FL%2034950!5e0!3m2!1sen!2sus!4v1710000000000!5m2!1sen!2sus" 
+                width="100%" 
+                height="400" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                >
+            </iframe>
+        </div>
+    </main>
+
+    <aside class="sidebar">
+        <h4>Our Office</h4>
+        <div style="margin-bottom: 20px;">
+            <p><strong>Messer & Messer Law Offices</strong><br>
+            2112 South U.S. Highway 1, Suite 102<br>
+            Fort Pierce, FL 34950</p>
+            
+            <p><strong>Phone:</strong> (772) 879-3000<br>
+            <strong>Hours:</strong> Mon-Fri, 8:30AM - 4:30PM</p>
+        </div>
+
+        <h4>Practice Areas</h4>
+        <ul class="sidebar-practice-list">
+
+            <li>Motor Vehicle Accidents
+                <ul>
+                    <li>Car & Truck Accidents</li>
+                    <li>Bicycle & Pedestrian Accidents</li>
+                    <li>Motorcycle & School Bus Accidents</li>
+                    <li>Tractor Trailer Accidents</li>
+                    <li>Drunk Driving Injuries</li>
+                </ul>
+            </li>
+
+            <li>Personal Injury & Trauma
+                <ul>
+                    <li>Catastrophic Spinal & Brain Injuries</li>
+                    <li>Paralysis Claims</li>
+                    <li>Wrongful Death Accidents</li>
+                    <li>Premises Liability (Slip & Fall)</li>
+                    <li>Dog Bites & Defective Products</li>
+                    <li>Negligent Security</li>
+                </ul>
+            </li>
+
+            <li>Family Law & Estate Planning
+                <ul>
+                    <li>Divorce & Property Division</li>
+                    <li>Wills, Trusts & Probate</li>
+                    <li>Health Care Directives</li>
+                </ul>
+            </li>
+            
+            <li style="border:none;"><a href="verdicts.html" style="color:var(--fsu-garnet);">View Verdicts & Settlements</a></li>
+        </ul>
+    </aside>
+</div>
+
+<footer>
+    <div class="footer-grid">
+        <div>
+            <h5>The Firm</h5>
+            <p style="opacity: 0.7; font-size: 0.9rem;">Messer & Messer Law Offices</p>
+        </div>
+        <div>
+            <h5>Location</h5>
+            <address>
+                2112 South U.S. Highway 1, Suite 102<br>
+                Fort Pierce, FL 34950
+            </address>
+        </div>
+        <div>
+            <h5>Contact</h5>
+            <address>
+                Office: (772) 879-3000<br>
+            </address>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
+
+<script type="text/javascript">
+    const form = document.getElementById('form');
+    const submitBtn = form.querySelector('button[type="submit"]');
+    const formBlock = document.querySelector('.contact-form');
+    const successMsg = document.getElementById('success-msg');
+    
+
+    window.onload = function() {
+        // Reset the form fields when the page loads
+        form.reset();
+    };
+
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        const formData = new FormData(form);
+        
+
+        const originalText = submitBtn.textContent;
+
+        submitBtn.textContent = "Sending...";
+        submitBtn.disabled = true;
+
+        try {
+            const response = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                body: formData
+            });
+
+            const data = await response.json();
+
+            if (response.ok) {
+                debugger;
+                alert("Success! Your message has been sent.");
+                formBlock.style.display = "none";
+                successMsg.style.display = "block";
+                successMsg.scrollIntoView({ behavior: 'smooth' });
+                form.reset();
+            } else {
+                alert("Error: " + data.message);
+            }
+
+        } catch (error) {
+            alert("Something went wrong. Please try again.");
+        } finally {
+            submitBtn.textContent = originalText;
+            submitBtn.disabled = false;
+        }
+    });
+</script>
