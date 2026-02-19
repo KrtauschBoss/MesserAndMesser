@@ -128,6 +128,25 @@ nav a {
         box-shadow: 0 10px 25px rgba(0,0,0,0.2);
         border-top: 3px solid var(--fsu-gold);
     }
+
+        /* The Arrow - Appears only on items with submenus (add .dropdown class to LI) */
+    li.dropdown > a::after {
+        content: '';
+        width: 6px;
+        height: 6px;
+        margin-left: 8px;
+        border-right: 2px solid var(--fsu-gold);
+        border-bottom: 2px solid var(--fsu-gold);
+        transform: rotate(45deg);
+        transition: transform 0.3s ease;
+        position: relative;
+        top: -2px; /* Perfect vertical alignment nudge */
+    }
+
+    li.is-active > a::after {
+        transform: rotate(225deg);
+        top: 1px; /* Adjust nudge for inverted arrow */
+    }
 }
 
 /* ==========================================================================
@@ -169,28 +188,9 @@ nav a {
    5. INTERACTION & ARROW LOGIC
    ========================================================================== */
 
-/* The Arrow - Appears only on items with submenus (add .dropdown class to LI) */
-li.dropdown > a::after {
-    content: '';
-    width: 6px;
-    height: 6px;
-    margin-left: 8px;
-    border-right: 2px solid var(--fsu-gold);
-    border-bottom: 2px solid var(--fsu-gold);
-    transform: rotate(45deg);
-    transition: transform 0.3s ease;
-    position: relative;
-    top: -2px; /* Perfect vertical alignment nudge */
-}
-
-/* JS Toggle State: Show Menu & Rotate Arrow */
+/* JS Toggle State: Show Menu */
 li.is-active .submenu { 
     display: block !important; 
-}
-
-li.is-active > a::after {
-    transform: rotate(225deg);
-    top: 1px; /* Adjust nudge for inverted arrow */
 }
 
 /* Active Page Highlights */
