@@ -1,0 +1,63 @@
+/* Specific styles for the Contact Form */
+.contact-form {
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    border-top: 4px solid var(--fsu-garnet);
+    margin-top: 20px;
+}
+.form-group { margin-bottom: 15px; }
+.form-group label { display: block; font-weight: 700; margin-bottom: 5px; color: var(--navy-dark); }
+.form-group input, .form-group textarea, .form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: 'Inter', sans-serif;
+}
+.map-container {
+    margin-top: 30px;
+    border: 1px solid #ddd;
+    line-height: 0;
+}
+
+#success-msg {
+    display: none; 
+    text-align: center; 
+    padding: 50px 20px; 
+    background: #fff; 
+    border: 2px solid var(--fsu-gold); 
+    border-radius: 8px; 
+    margin-top: 20px;
+}
+
+#success-msg div:first-of-type {
+    font-size: 50px; 
+    color: var(--fsu-gold); 
+    margin-bottom: 10px;
+}
+
+#success-msg h3:first-of-type {
+    color: var(--fsu-garnet); 
+    font-family: 'Playfair Display', serif; 
+    font-size: 1.8rem;
+}
+
+#success-msg p:first-of-type {
+    font-family: 'Inter', sans-serif; 
+    color: #555; 
+    line-height: 1.6;
+}
+
+#success-msg button:first-of-type {
+    margin-top: 20px; 
+    background: transparent;
+    border: 1px solid #ccc; 
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+iframe {
+    border:0;
+}
