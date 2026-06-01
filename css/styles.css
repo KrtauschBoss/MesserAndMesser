@@ -151,3 +151,21 @@ body { font-family: 'Inter', sans-serif; color: var(--fsu-black); line-height: 1
     margin-bottom: 25px;
     color: var(--fsu-black);
 }
+
+.cta-secondary {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #f8f9fa; /* Light grey or your brand color */
+    color: #333;
+    text-decoration: none;
+    border: 2px solid #333; /* Darker border for contrast */
+    font-weight: bold;
+    border-radius: 4px;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.cta-secondary:hover {
+    background-color: #333;
+    color: #fff;
+}
